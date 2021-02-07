@@ -29,6 +29,7 @@ public class SfgJmsApplication {
 		config.getAcceptorConfigurations().add(new TransportConfiguration(NettyAcceptorFactory.class.getName()));
 		ActiveMQServer server = new ActiveMQServerImpl(config);
 
+		// ActiveMQServers.newActiveMQServer(config);
 		SpringApplication.run(SfgJmsApplication.class, args);
 
 	}
